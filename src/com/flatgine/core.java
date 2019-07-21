@@ -20,10 +20,23 @@ public class core {
     }
     
     
-  //функция проверяющая на столкновение два объекта. Возвращает true, если один объект находится в другом или столкнулся с ним
-  //рассчёт столкновения производится по фактическим координатам (не координатам графической модели)
+  //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ. пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ true, пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅ
+  //пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ (пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ)
     public static boolean hasCollisionComplex( Object obj1, Object obj2){
 		if(hasCollisionVertical(obj1,obj2) & hasCollisionHorizontal(obj1,obj2)){return true;}
 		else{return false;}
 	}
+    
+    
+    public void scrollObjectsGroupOfAxisXByDistance(Object[] objectGroup, int distance) {
+    	for(int i = 0; i < objectGroup.length; i++) {
+    		objectGroup[i].setXPlusParameter(distance);
+    	}
+    }
+    
+    public void scrollObjectsGroupOfAxisYByDistance(Object[] objectGroup, int distance) {
+    	for(int i = 0; i < objectGroup.length; i++) {
+    		objectGroup[i].setYPlusParameter(distance);
+    	}
+    }
 }
