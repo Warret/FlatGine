@@ -1,6 +1,5 @@
 package com.flatgine.camera;
 
-import com.flatgine.objectsys.Object;
 import com.flatgine.camera.MapScroller;
 
 public class Camera {
@@ -14,6 +13,16 @@ public class Camera {
 		setY(y);
 	}
 	
+	public void moveToCoord(int x, int y) {
+		setXMinusParam(x);
+		setYMinusParam(y);
+		//TODO There is null argument until the groups objects is created
+		MapScroller.scrollOfXAxisObjectsGroupByDistance(null, x);	
+		MapScroller.scrollOfYAxisObjectsGroupByDistance(null, y);
+	}
+	
+	
+	//___Setters_And_Getters__
 	private void setX(int X) {
 		this.x = X;
 	}
@@ -21,16 +30,6 @@ public class Camera {
 	private void setY(int Y) {
 		this.y = Y;
 	}
-	
-	
-	public void moveToCoord(int x, int y) {
-		setXMinusParam(x);
-		setYMinusParam(y);
-		//TODO There are null argument until groups objects doesn't make
-		MapScroller.scrollOfXAxisObjectsGroupByDistance(null, x);	
-		MapScroller.scrollOfYAxisObjectsGroupByDistance(null, y);
-	}
-	
 	
 	private void setXPlusParam(int param) {
 		this.x += param;
