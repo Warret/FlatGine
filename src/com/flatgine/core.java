@@ -26,17 +26,5 @@ public class core {
 		if(hasCollisionVertical(obj1,obj2) & hasCollisionHorizontal(obj1,obj2)){return true;}
 		else{return false;}
 	}
-    
-    
-    public void scrollObjectsGroupOfAxisXByDistance(Object[] objectGroup, int distance) {
-    	for(int i = 0; i < objectGroup.length; i++) {
-    		objectGroup[i].setXPlusParameter(distance);
-    	}
-    }
-    
-    public void scrollObjectsGroupOfAxisYByDistance(Object[] objectGroup, int distance) {
-    	for(int i = 0; i < objectGroup.length; i++) {
-    		objectGroup[i].setYPlusParameter(distance);
-    	}
-    }
+   
 }
