@@ -39,8 +39,16 @@ public class Object {
         this.x = x;
     }
     
+    public void setXPlusParameter(int parameter) {
+        this.x += parameter;
+    }
+    
     public void setY(int y) {
         this.y = y;
+    }
+    
+    public void setYPlusParameter(int parameter) {
+        this.y += parameter;
     }
     
     public void setWidth(int width) {
