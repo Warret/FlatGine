@@ -4,15 +4,15 @@ import com.flatgine.objectsys.Object;
 
 public class MapScroller {
 	
-	public static void scrollObjectsGroupOfAxisXByDistance(Object[] objectGroup, int distance) {
-    	for(int i = 0; i < objectGroup.length; i++) {
-    		objectGroup[i].setXPlusParameter(distance);
+	public static void scrollOfXAxisObjectsGroupByDistance(Object[] objectsGroup, int distance) {
+    	for(int i = 0; i < objectsGroup.length; i++) {
+    		objectsGroup[i].setXPlusParameter(distance);
     	}
     }
 	
-	public static void scrollObjectsGroupOfAxisYByDistance(Object[] objectGroup, int distance) {
-    	for(int i = 0; i < objectGroup.length; i++) {
-    		objectGroup[i].setYPlusParameter(distance);
+	public static void scrollOfYAxisObjectsGroupByDistance(Object[] objectsGroup, int distance) {
+    	for(int i = 0; i < objectsGroup.length; i++) {
+    		objectsGroup[i].setYPlusParameter(distance);
     	}
     }
 	
