@@ -27,4 +27,10 @@ public class core {
 		else{return false;}
 	}
    
+    public static void gravityY(Object obj, int interval){
+    	obj.setYIncrement(interval);
+    	if(obj.getCurrentSpeedFall()<obj.getMaxSpeedFall())
+    	{obj.setCurrentSpeedFallIncrement(obj.getAccelerationFall());}
+    	}
+  
 }
