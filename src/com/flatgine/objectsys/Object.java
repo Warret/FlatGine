@@ -4,6 +4,7 @@ public class Object {
     String scene;
     int layer;
     int modelX, modelY, modelWidth, modelHeight;
+    int x, y, width, height;
 
     //for collisions
     int ex, ey;
@@ -19,6 +20,43 @@ public class Object {
 
     public String getScene() {
         return scene;
+    }
+    
+    public int getX() {
+        return x;
+    }
+    public int getY() {
+        return y;
+    }
+    public int getWidth() {
+        return width;
+    }
+    public int getHeight() {
+        return height;
+    }
+    
+    public void setX(int x) {
+        this.x = x;
+    }
+    
+    public void setXPlusParameter(int parameter) {
+        this.x += parameter;
+    }
+    
+    public void setY(int y) {
+        this.y = y;
+    }
+    
+    public void setYPlusParameter(int parameter) {
+        this.y += parameter;
+    }
+    
+    public void setWidth(int width) {
+        this.width = width;
+    }
+    
+    public void setHeight(int height) {
+        this.height = height;
     }
 
     public int getModelX() {
