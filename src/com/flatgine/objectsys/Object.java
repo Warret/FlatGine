@@ -22,6 +22,9 @@ public class Object {
         return scene;
     }
     
+    public int getCurrentSpeedFall() {
+        return currentSpeedFall;
+    }
     public int getX() {
         return x;
     }
@@ -35,9 +38,15 @@ public class Object {
         return height;
     }
     
+    public void setCurrentSpeedFall(int currentSpeedFall) {
+        this.currentSpeedFall =currentSpeedFall ;
+    }
+    
+    
     public void setX(int x) {
         this.x = x;
     }
+    
     
     public void setXPlusParameter(int parameter) {
         this.x += parameter;
