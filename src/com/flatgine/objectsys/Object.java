@@ -54,12 +54,12 @@ public class Object {
         this.x = x;
     }
     
-    public void increaseXBy(int parameter) {
-        this.x += parameter;
+    public void increaseXBy(int delta) {
+        this.x += delta;
     }
     
-    public void decreaseXBy(int parameter) {
-        this.x -= parameter;
+    public void decreaseXBy(int delta) {
+        this.x -= delta;
     }
     
     
@@ -68,12 +68,12 @@ public class Object {
         this.y = y;
     }
     
-    public void increaseYBy(int parameter) {
-        this.y += parameter;
+    public void increaseYBy(int delta) {
+        this.y += delta;
     }
     
-    public void decreaseYBy(int parameter) {
-        this.y -= parameter;
+    public void decreaseYBy(int delta) {
+        this.y -= delta;
     }
     
 
@@ -83,8 +83,8 @@ public class Object {
         this.currentSpeedFall = currentSpeedFall ;
     }
     
-    public void increaseCurrentSpeedFallBy(int parameter) {
-        this.currentSpeedFall += parameter;
+    public void increaseCurrentSpeedFallBy(int delta) {
+        this.currentSpeedFall += delta;
     }
     
     public void setMaxSpeedFall(int maxSpeedFall) {
