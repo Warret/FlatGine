@@ -80,7 +80,11 @@ public class Object {
     //__FOR_PHYS__
     
     public void setCurrentSpeedFall(int currentSpeedFall) {
-        this.currentSpeedFall =currentSpeedFall ;
+        this.currentSpeedFall = currentSpeedFall ;
+    }
+    
+    public void increaseCurrentSpeedFallBy(int parameter) {
+        this.currentSpeedFall += parameter;
     }
     
     public void setMaxSpeedFall(int maxSpeedFall) {
