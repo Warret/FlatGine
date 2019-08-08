@@ -25,12 +25,15 @@ public class Object {
     public int getCurrentSpeedFall() {
         return currentSpeedFall;
     }
+    
     public int getX() {
         return x;
     }
+    
     public int getY() {
         return y;
     }
+    
     public int getWidth() {
         return width;
     }
@@ -42,13 +45,11 @@ public class Object {
         this.currentSpeedFall =currentSpeedFall ;
     }
     
-    
     public void setX(int x) {
         this.x = x;
     }
     
-    
-    public void setXPlusParameter(int parameter) {
+    public void increaseXBy(int parameter) {
         this.x += parameter;
     }
     
@@ -56,7 +57,7 @@ public class Object {
         this.y = y;
     }
     
-    public void setYPlusParameter(int parameter) {
+    public void increaseYBy(int parameter) {
         this.y += parameter;
     }
     

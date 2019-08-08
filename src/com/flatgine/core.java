@@ -28,7 +28,7 @@ public class core {
 	}
    
     public static void gravityY(Object obj, int interval){
-    	obj.setYIncrement(interval);
+    	obj.increaseYBy(interval);
     	if(obj.getCurrentSpeedFall()<obj.getMaxSpeedFall())
     	{obj.setCurrentSpeedFallIncrement(obj.getAccelerationFall());}
     	}
