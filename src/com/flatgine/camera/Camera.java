@@ -14,8 +14,8 @@ public class Camera {
 	}
 	
 	public void moveToCoord(int x, int y) {
-		setXMinusParam(x);
-		setYMinusParam(y);
+		decreaseXBy(x);
+		decreaseYBy(y);
 		//TODO There is null argument until the groups objects is created
 		MapScroller.scrollOfXAxisObjectsGroupByDistance(null, x);	
 		MapScroller.scrollOfYAxisObjectsGroupByDistance(null, y);
@@ -31,20 +31,20 @@ public class Camera {
 		this.y = Y;
 	}
 	
-	private void setXPlusParam(int param) {
-		this.x += param;
+	private void increaseXBy(int delta) {
+		this.x += delta;
 	}
 	
-	private void setXMinusParam(int param) {
-		this.x -= param;
+	private void decreaseXBy(int delta) {
+		this.x -= delta;
 	}
 	
-	private void setYPlusParam(int param) {
-		this.y += param;
+	private void increaseYBy(int delta) {
+		this.y += delta;
 	}
 	
-	private void setYMinusParam(int param) {
-		this.y -= param;
+	private void decreaseYBy(int delta) {
+		this.y -= delta;
 	}
 	
 }

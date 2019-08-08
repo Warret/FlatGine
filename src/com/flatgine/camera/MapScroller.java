@@ -6,13 +6,13 @@ public class MapScroller {
 	
 	public static void scrollOfXAxisObjectsGroupByDistance(Object[] objectsGroup, int distance) {
     	for(int i = 0; i < objectsGroup.length; i++) {
-    		objectsGroup[i].setXPlusParameter(distance);
+    		objectsGroup[i].increaseXBy(distance);
     	}
     }
 	
 	public static void scrollOfYAxisObjectsGroupByDistance(Object[] objectsGroup, int distance) {
     	for(int i = 0; i < objectsGroup.length; i++) {
-    		objectsGroup[i].setYPlusParameter(distance);
+    		objectsGroup[i].increaseYBy(distance);
     	}
     }
 	

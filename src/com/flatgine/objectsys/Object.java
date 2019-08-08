@@ -6,9 +6,6 @@ public class Object {
     int modelX, modelY, modelWidth, modelHeight;
     int x, y, width, height;
 
-    //for collisions
-    int ex, ey;
-
     String state;
 
     //for physSys
@@ -17,106 +14,85 @@ public class Object {
     int maxSpeedFall;
     int accelerationFall;
 
-
-    public String getScene() {
-        return scene;
-    }
     
-    public int getCurrentSpeedFall() {
-        return currentSpeedFall;
-    }
+    
+    //_____GETTERS____
+    
     public int getX() {
         return x;
     }
+    
     public int getY() {
         return y;
     }
+    
     public int getWidth() {
         return width;
     }
     public int getHeight() {
         return height;
     }
+
+    public int getAccelerationFall() {
+        return accelerationFall;
+    }
     
-    public void setCurrentSpeedFall(int currentSpeedFall) {
-        this.currentSpeedFall =currentSpeedFall ;
+    public int getMaxSpeedFall() {
+        return maxSpeedFall;
+    }
+    
+    public int getCurrentSpeedFall() {
+        return currentSpeedFall;
     }
     
     
+    
+   //_____SETTERS__INCREMENTS__DECREMENTS_____
+    
+    //__X__
     public void setX(int x) {
         this.x = x;
     }
     
-    
-    public void setXPlusParameter(int parameter) {
-        this.x += parameter;
+    public void increaseXBy(int delta) {
+        this.x += delta;
     }
     
+    public void decreaseXBy(int delta) {
+        this.x -= delta;
+    }
+    
+    
+    //__Y__
     public void setY(int y) {
         this.y = y;
     }
     
-    public void setYPlusParameter(int parameter) {
-        this.y += parameter;
+    public void increaseYBy(int delta) {
+        this.y += delta;
     }
     
-    public void setWidth(int width) {
-        this.width = width;
+    public void decreaseYBy(int delta) {
+        this.y -= delta;
     }
     
-    public void setHeight(int height) {
-        this.height = height;
-    }
 
-    public int getModelX() {
-        return modelX;
+    //__FOR_PHYS__
+    
+    public void setCurrentSpeedFall(int currentSpeedFall) {
+        this.currentSpeedFall = currentSpeedFall ;
     }
-
-    public void setModelX(int modelX) {
-        this.modelX = modelX;
+    
+    public void increaseCurrentSpeedFallBy(int delta) {
+        this.currentSpeedFall += delta;
     }
-
-    public int getModelWidth() {
-        return modelWidth;
-    }
-
-    public void setModelWidth(int modelWidth) {
-        this.modelWidth = modelWidth;
-    }
-
-    public int getEx() {
-        return ex;
-    }
-
-    public void setEx(int ex) {
-        this.ex = ex;
-    }
-
-    public boolean isPhys() {
-        return phys;
-    }
-
-    public void setPhys(boolean phys) {
-        this.phys = phys;
-    }
-
-    public int getMaxSpeedFall() {
-        return maxSpeedFall;
-    }
-
+    
     public void setMaxSpeedFall(int maxSpeedFall) {
         this.maxSpeedFall = maxSpeedFall;
-    }
-
-    public int getAccelerationFall() {
-        return accelerationFall;
     }
 
     public void setAccelerationFall(int accelerationFall) {
         this.accelerationFall = accelerationFall;
     }
 
-    public void setScene(String scene) {
-        this.scene = scene;
-    }
 }
