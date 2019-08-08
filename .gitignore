@@ -2,4 +2,6 @@
 .idea/
 src/com/company/
 /src/com/flatgine/sandbox/
+.classpath
+.project
 
