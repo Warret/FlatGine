@@ -2,9 +2,8 @@ package test.flatgine.objectsys;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Ignore;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import com.flatgine.objectsys.Object;
@@ -13,12 +12,11 @@ class ObjectTest {
 
 	static final Object testObj = new Object();
 	
-	@BeforeClass
+	@BeforeAll
 	public static void init() {
-		testObj.setX(100);
 	}
 	
-	@Before
+	@BeforeEach
 	public void setup() {
 		testObj.setX(100);
 	}
@@ -27,7 +25,6 @@ class ObjectTest {
 	//____SETTER____
 	@Test
 	void setter() {
-		testObj.setX(100);
 		assertEquals(testObj.getX(), 100);
 	}
 	
@@ -45,7 +42,6 @@ class ObjectTest {
 		assertEquals(testObj.getX(), 50);
 	}
 
-	@Ignore
 	@Test
 	void increaseForZeroNumber() {
 		testObj.increaseXBy(0);
@@ -66,7 +62,6 @@ class ObjectTest {
 		assertEquals(testObj.getX(), 150);
 	}
 	
-	@Ignore
 	@Test
 	void decreaseForZeroNumber() {
 		testObj.decreaseXBy(0);
