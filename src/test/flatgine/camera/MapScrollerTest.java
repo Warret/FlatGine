@@ -1,7 +1,8 @@
 package test.flatgine.camera;
 
-import static org.junit.jupiter.api.Assertions.*;
-import org.junit.BeforeClass;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import com.flatgine.camera.MapScroller;
@@ -9,11 +10,11 @@ import com.flatgine.objectsys.Object;
 
 class MapScrollerTest {
 
-	//TODO take tests for 1, 5, 10, 50, 100, 300 objects in testGroup
+	//TODO take tests for 1, 5, 10, 50, 100, 300 objects in testGroup for determination of efficiency
 	static final Object[] testGroup = new Object[1];
 	
 	
-	@BeforeClass
+	@BeforeAll
 	public static void init() {
 		for(int i = 0; i < testGroup.length; i++) {
 			testGroup[i] = new Object();
