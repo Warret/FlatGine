@@ -11,7 +11,5 @@ class CameraTest {
 
 	@Test
 	void test() {
-		fail("Not yet implemented");
-	}
-
+		
 }
